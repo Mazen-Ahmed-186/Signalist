@@ -18,7 +18,7 @@ const NavItems = ({ initialStocks }: { initialStocks : StockWithWatchlistStatus[
         <ul className="flex flex-col sm:flex-row p-2 gap-3 sm:gap-10 font-medium">
             {NAV_ITEMS.map((item) => {
 
-                if (item.label === "Search") return (
+                if (item.href === "Search") return (
                     <li key={"search-trigger"}>
                         <SearchCommand
                             renderAs={"text"}
